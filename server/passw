@@ -1,0 +1,32 @@
+Superuser:
+
+admin
+capstone
+
+User:
+
+rider
+capstone
+
+
+To fix OSM layers:
+
+/usr/local/lib/python3.5/dist-packages/django/contrib/gis/templates/gis
+    var base_layer = new ol.layer.Tile({
+        source: new ol.source.OSM()
+    });
+
+Check path with:
+python3
+import django
+print(django.__path__)
+
+or better yet...
+Put everything in a virtual enviroment
+
+Setting up gis:
+Remember to import packages individually:
+python3 manage.py makemigrations flintstone
+
+Include GIS in settings.py
+And install packages

@@ -1,0 +1,26 @@
+{% if poi %}
+
+<div>
+    <a href="{% url 'flintstone:logout' %}">Logout</a>
+</div>
+
+<div id="info_field">
+  <h1> Start </h1>
+  <select id="start_field">
+    {% for point in poi %}
+      <option value="{{point.id}}">{{point.display_name}}</option>
+    {% endfor %}
+  </select> 
+  <h1> Destination </h1>
+  <select id="dest_field">
+    {% for point in poi %}
+      <option value="{{point.id}}">{{point.display_name}}</option>
+    {% endfor %}
+  </select> 
+  <h3 id="error_field" style="color:DarkRed; display:block; margin:1em; text-align:center;"> 
+  </h3>
+</div>
+
+<button type="button" id="ride_requester">Request Ride</button> 
+
+{% endif %}

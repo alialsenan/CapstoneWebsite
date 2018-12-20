@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Console</title>
+    <link rel="stylesheet" href="{% static 'ol.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'flintstone/css/style.css' %}" type="text/css">
+    <script src="{% static 'ol.js' %}"></script>
+  </head>
+  <body>
+    <div id="overlay">
+    </div> 
+    <div id="map" class="map"></div>
+    <script src="{% static 'flintstone/scripts/console.js' %}"></script>
+  </body>
+</html>

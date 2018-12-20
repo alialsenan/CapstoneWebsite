@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0%;
+}
+
+div#map {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    float: left;
+    z-index:-1;
+}
+
+#overlay {
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 2;
+}
+
+div#info_field {
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+select {
+    width: 90%;
+    height: 10%;
+    font-size: 1em;
+    box-shadow: 0px 0px 4px #808080;
+}
+
+div#wait_menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    z-index:-1;
+    box-shadow: 0px 0px 6px #404040;
+}
+
+#wait_menu>.wait_menu_status_container {
+    flex-grow: 1;
+    height: 100%;
+    text-align: left;
+    padding: 0em 1em;
+}
+
+#wait_menu>.wait_menu_btn_container {
+    height: 100%;
+}
+
+button.wait_menu {
+    font-size: 1.4em;
+    font-weight: bold;
+    height: 100%;
+    float:right;
+    padding: 0em 0.3em;
+}
+
+button#ride_requester {
+    flex-grow: 1;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px 0px 6px #808080;
+}
